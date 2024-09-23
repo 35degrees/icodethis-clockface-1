@@ -15,6 +15,7 @@ function showTime() {
 	console.log({ second })
 	minuteHand.style.transform = `rotate(${(minute / 60) * 360 - 90}deg)`
 	hourHand.style.transform = `rotate(${(hour / 12) * 360 - 90}deg)`
+	setInterval(showTime, 1000)
 }
 
-setInterval(showTime, 1000)
+showTime()
